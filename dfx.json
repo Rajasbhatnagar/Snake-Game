@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "snakegame_backend": {
+      "main": "src/snakegame_backend/main.mo",
+      "type": "motoko"
+    },
+    "snakegame_frontend": {
+      "dependencies": [
+        "snakegame_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/snakegame_frontend/src/index.html"
+      },
+      "source": [
+        "src/snakegame_frontend/assets",
+        "dist/snakegame_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
