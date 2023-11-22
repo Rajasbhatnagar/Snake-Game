@@ -1,0 +1,4 @@
+service : {
+  highestScoreHandler: () -> (nat) query;
+  updateHighestScore: (nat) -> () oneway;
+}
